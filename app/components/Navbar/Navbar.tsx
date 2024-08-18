@@ -1,12 +1,13 @@
 import Container from "../Container";
 import Logo from "./Logo";
+import Search from "./Search";
 
 const Navbar = () => {
     return (
         <div className="fixed w-full bg-white z-10 shadow-lg">
             <div className="
-            py-1
-            border-b-[0px]
+            py-4
+            border-b-[1px]
             "
             >
                 <Container>
@@ -20,6 +21,7 @@ const Navbar = () => {
                     "
                     >
                         <Logo />
+                        <Search />
                     </div>
                 </Container>
             </div>
