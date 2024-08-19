@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar/Navbar";
 // import ClientOnly from "./components/ClientOnly";
 import Modal from "./components/modals/Modal";
+import RegisterModal from "./components/modals/RegisterModal";
 
 const font = Nunito({ subsets: ["latin"] });
 
@@ -20,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
-            <Modal isOpen/>
+            <RegisterModal />
             <Navbar />
         {children}
         </body>
